@@ -19,6 +19,9 @@ IF(NOT CMAKE_BUILD_TYPE)
   MESSAGE(STATUS "No build type specified. Building in ${CMAKE_BUILD_TYPE} mode.")
 ENDIF()
 
+# Print the current build type
+MESSAGE(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+
 # Enable a switchable dimension choice
 IF (NOT DEFINED DIM)
         SET(DIM 2)
